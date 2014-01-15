@@ -213,12 +213,12 @@ public class MainForm extends javax.swing.JFrame {
 
     private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
         // TODO add your handling code here:
-        //jTextField2.setText(jTextField1.getText());
+        jTextField2.setText(jTextField1.getText());
     }//GEN-LAST:event_jTextField1KeyTyped
 
     private void jComboBox1İtemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox1İtemStateChanged
         // TODO add your handling code here:
-        jTextField2.setText(jComboBox1.getSelectedItem().toString());
+        //jTextField2.setText(jComboBox1.getSelectedItem().toString());
     }//GEN-LAST:event_jComboBox1İtemStateChanged
 
     /**
