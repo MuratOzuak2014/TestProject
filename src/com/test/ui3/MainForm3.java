@@ -5,6 +5,8 @@
  */
 package com.test.ui3;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author user
@@ -128,13 +130,20 @@ public class MainForm3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int sayi1 = Integer.parseInt(jTextField1.getText());
-        int sayi2 = Integer.parseInt(jTextField2.getText());
-        int sonuc1 = sayi1 + sayi2;
+        try {
+            int sayi1 = Integer.parseInt(jTextField1.getText());
+            int sayi2 = Integer.parseInt(jTextField2.getText());
+            int sonuc1 = sayi1 + sayi2;
 
-        String sonuc2 = String.valueOf(sonuc1);
+            String sonuc2 = String.valueOf(sonuc1);
 
-        jTextField3.setText(sonuc2);
+            jTextField3.setText(sonuc2);
+        }catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Lütfen geçerli bir sayı girin");
+                }catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Beklenmedik bir hata oluştu");
+                }
+                
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
