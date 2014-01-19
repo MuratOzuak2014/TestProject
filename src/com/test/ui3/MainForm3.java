@@ -138,12 +138,12 @@ public class MainForm3 extends javax.swing.JFrame {
             String sonuc2 = String.valueOf(sonuc1);
 
             jTextField3.setText(sonuc2);
-        }catch (NumberFormatException ex) {
+        } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(null, "Lütfen geçerli bir sayı girin");
-                }catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Beklenmedik bir hata oluştu");
-                }
-                
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, "Beklenmedik bir hata oluştu");
+        }
+
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
